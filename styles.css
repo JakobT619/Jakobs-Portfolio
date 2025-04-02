@@ -1,0 +1,291 @@
+body, html {
+    height: 100% /* can change to take up less space if needed */
+}
+
+/* Style the container for the text and title */
+.about-me {
+    position: relative;
+    left: 50%;
+    top: 8%;
+    width: 40%;
+    z-index: 1;
+}
+
+/* Style about me text */
+.about-description {
+    background-color: rgba(140, 200, 200, .5);
+    display: inline-block;
+    margin-bottom: 5rem;
+    padding: 4px;
+    /* border radius to round the corners of background box */
+    border-radius: 10px;
+    /* shadows for depth around background box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    opacity: 90%;
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .about-description {
+        font-size: 4vw; /* Larger font size for smaller screens */
+    }
+}
+
+ /* Style my about me title */
+.about-title {
+    color: white;
+    opacity: 80%;
+ }
+
+/* Background image for pages other than index(uses hero) */
+.background-graphic {
+    /* would typically be unique, but here i just used the hero image again */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/IMG_2579.jpeg");
+    height: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover, 70% auto;
+    position: absolute;
+    width: 100%;
+    z-index:0;
+}
+ /* Style my hero-text link to contact page as a button */
+.contact-button {
+    background-color: #0d6efd;
+    border: black;
+    color: white;
+    font-size: 2rem;
+}
+
+.contact-button:hover {
+    transform: scale(1.1);
+}
+
+.contact-info {
+    color: white;
+    opacity: 90%;
+    margin: 2rem;
+}
+
+.contact-info-header {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info-body {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(140, 200, 200, .5);
+    /* border radius to round the corners of background box */
+    border-radius: 10px;
+    /* shadows for depth around background box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    list-style-position: inside;
+    padding: 4px;
+    margin-bottom: 4rem;
+    margin-top: rem;
+}
+
+.contact-info-contacts {
+    font-size: 2rem;
+    margin-top: 2rem;
+    max-width: 35%;
+}
+
+.contact-info-outro {
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.github-link {
+    color: blue;
+    font-size: 1.2rem;
+}
+
+/* The hero image */
+.hero-image {
+    /* The linear gradient acts as a sort of overlay, to help text visibility on the image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/IMG_2579.jpeg");
+    /* This height sets the height of the hero image to x% of
+    its parent element(body, html) size */
+    height: 100%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover, 70% auto;
+    padding-left: 10vw;
+    position: relative;
+}
+
+/* Hero image text left alligned */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    max-width: 300px;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 80%;
+}
+
+.hero-text-header {
+    font-size: 5rem;
+}
+
+.hero-text-body {
+    font-size: 2rem;
+}
+
+/* Arrows to demonstrate the direction of my learning journey through different languages */
+.logo-arrow1 {
+    width: 25%;
+    height: auto;
+    top: 10%;
+}
+
+.logo-arrow2 {
+    width: 25%;
+    height: auto;
+}
+
+.logo-arrow3 {
+    width: 25%;
+    height: auto;
+}
+
+
+/* Container for logos and text */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    width: 40%;
+    height: 80%;
+}
+
+/* C logo */
+.logo1 {
+    width: 20%;
+    height: auto;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    object-fit: contain;
+}
+
+/* Python logo */
+.logo2 {
+    width: 50%;
+    height: auto;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    object-fit: contain;
+}
+
+/* SQL logo */
+.logo3 {
+    width: 20%;
+    height: auto;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    object-fit: contain;
+}
+
+
+/* HTML,CSS,JS logos */
+.logo4 {
+    width: 30%;
+    height: auto;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    object-fit: contain;
+}
+
+/* Hover effect for language logos on about page */
+.logo1:hover {
+    transform: scale(1.1);
+}
+
+.logo2:hover {
+    transform: scale(1.1);
+}
+
+.logo3:hover {
+    transform: scale(1.1);
+}
+
+.logo4:hover {
+    transform: scale(1.1);
+}
+
+/*  */
+.logo-learning-path-text {
+    color: white;
+    opacity: 80%;
+    padding-top: 10%;
+}
+
+.skills-course-list {
+    max-width: 30vw;
+    display: inline-block;
+    list-style-position: inside;
+    padding: 4px;
+}
+
+.skill-item-soft {
+    max-width: 30vw;
+    background-color: rgba(140, 200, 200, .5);
+    /* border radius to round the corners of background box */
+    border-radius: 10px;
+    /* shadows for depth around background box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    list-style-position: inside;
+    padding: 4px;
+}
+
+.skills-text {
+    color: white;
+    opacity: 90%;
+    padding: 3rem;
+}
+
+.skills-text h1 {
+    font-size: 3rem;
+}
+
+.skill-item-hard {
+    background-color: rgba(140, 200, 200, .5);
+    /* border radius to round the corners of background box */
+    border-radius: 10px;
+    /* shadows for depth around background box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    list-style-position: inside;
+    padding: 4px;
+    max-width: 25rem;
+    margin-bottom: 5px;
+}
+
+.skills-course-list {
+    background-color: rgba(140, 200, 200, .5);
+    /* border radius to round the corners of background box */
+    border-radius: 10px;
+    /* shadows for depth around background box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
